@@ -1,5 +1,6 @@
 package com.example.orm.security;
 
+import com.example.orm.tenancy.TenantHolder;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.codec.binary.Hex;

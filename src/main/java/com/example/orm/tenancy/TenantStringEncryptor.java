@@ -1,5 +1,6 @@
-package com.example.orm.security;
+package com.example.orm.tenancy;
 
+import com.example.orm.security.EncryptionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
@@ -9,7 +10,7 @@ import javax.persistence.Converter;
 import static org.hibernate.annotations.common.util.StringHelper.isNotEmpty;
 
 @Converter
-public class TenantEncryptor implements AttributeConverter<String,String> {
+public class TenantStringEncryptor implements AttributeConverter<String,String> {
 
     @Autowired
     private EncryptionUtil encryptionUtil;

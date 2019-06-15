@@ -1,10 +1,11 @@
 package com.example.orm.security;
 
+import com.example.orm.tenancy.TenantHolder;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class TenantHolderTest {
+public class UserTenantHolderTest {
 
     @Test
     public void setTenantId() {

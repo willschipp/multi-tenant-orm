@@ -1,6 +1,6 @@
-package com.example.orm.security;
+package com.example.orm.tenancy;
 
-public class TenantContext {
+public class TenantAttributes {
 
     private String id;
 
