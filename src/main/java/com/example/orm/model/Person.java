@@ -1,11 +1,14 @@
 package com.example.orm.model;
 
+import com.example.orm.security.TenantEncryptor;
+
 import javax.persistence.Column;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Person {
+public class Person extends Tenant {
 
     @Id
     private Integer id;
@@ -14,6 +17,7 @@ public class Person {
     private String firstName;
 
     @Column
+    @Convert(converter = TenantEncryptor.class)
     private String lastName;
 
     public Integer getId() {
